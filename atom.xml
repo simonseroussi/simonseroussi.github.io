@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[The Eternal Scholar - A French Fry's Journey in Life and the Science of Operations.]]></title>
+  <link href="http://simonseroussi.github.io/atom.xml" rel="self"/>
+  <link href="http://simonseroussi.github.io/"/>
+  <updated>2014-06-11T19:22:07-04:00</updated>
+  <id>http://simonseroussi.github.io/</id>
+  <author>
+    <name><![CDATA[Simon Seroussi]]></name>
+    <email><![CDATA[simon.seroussi@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[/Regular Expressions/]]></title>
+    <link href="http://simonseroussi.github.io/blog/2014/06/11/slash-regular-expressions-slash/"/>
+    <updated>2014-06-11T19:18:27-04:00</updated>
+    <id>http://simonseroussi.github.io/blog/2014/06/11/slash-regular-expressions-slash</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>

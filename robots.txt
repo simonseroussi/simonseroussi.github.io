@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://simonseroussi.github.io/sitemap.xml 
