@@ -1,79 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>The Eternal Scholar - A French Fry's Journey in Life and the Science of Operations.</title>
-  <meta name="viewport" content="width=device-width">
-  
-  <meta name="description" content="/Regular Expressions - Beginner&#8217;s Guide/ Expressions, Flatiron,, Regex,, Regular, Ruby, Jun 25th, 2014 Quote of the day: &ldquo;Some people, &hellip;">
-  <meta name="author" content="Simon Seroussi">
-
-  
-  <link rel="canonical" href="http://simonseroussi.github.io">
-  <link href="/favicon.ico" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="The Eternal Scholar - A French Fry's Journey in Life and the Science of Operations." type="application/atom+xml">
-
-  <script type="text/javascript" src="/javascripts/jquery-2.0.3.min.js"></script>
-  <script type="text/javascript" src="/javascripts/jquery.isotope.min.js"></script>
-  <script type="text/javascript" src="/javascripts/jquery.lettering.min.js"></script>
-
-  <script language="JavaScript">
-$(document).ready( function () {
-  $("a[href^='http']:not([href*='" + location.hostname + "'])").attr('target', '_blank');
-})
-</script>
-
-</head>
-
-<body>
-  <div class="container">
-    <header role="banner" class="header"><h1 class="site-title"><a href="/"><i class="icon-chevron-right"></i> The Eternal Scholar - A French Fry's Journey in Life and the Science of Operations.</a></h1>
-
-</header>
-    
-
-    
-<div role="main" class="article-index">
-  
-    
-    
-    
-
-    <article class="article theme-orange"><header class="article-header">
-  
-    <h1 class="article-title"><a href="/blog/2014/06/25/slash-regular-expressions-slash/" class="lettering">/Regular Expressions - Beginner&#8217;s Guide/</a></h1>
-  
-  <div>
-    <span><i class="icon-tag"></i> 
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/expressions/'>Expressions</a>, <a class='category' href='/blog/categories/flatiron/'>Flatiron,</a>, <a class='category' href='/blog/categories/regex/'>Regex,</a>, <a class='category' href='/blog/categories/regular/'>Regular</a>, <a class='category' href='/blog/categories/ruby/'>Ruby,</a>
-  
-</span>
-
-</span>
-    <span class="pull-right">
-
-
-
-
-
-
-
+  <title><![CDATA[Category: Regular | The Eternal Scholar - A French Fry's Journey in Life and the Science of Operations.]]></title>
+  <link href="http://simonseroussi.github.io/blog/categories/regular/atom.xml" rel="self"/>
+  <link href="http://simonseroussi.github.io/"/>
+  <updated>2014-06-26T01:17:43-04:00</updated>
+  <id>http://simonseroussi.github.io/</id>
+  <author>
+    <name><![CDATA[Simon Seroussi]]></name>
+    <email><![CDATA[simon.seroussi@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-
-<time datetime="2014-06-25T20:18:27-04:00" pubdate data-updated="true">Jun 25<span>th</span>, 2014</time></span>
-  </div>
-</header>
-
-
-  <div><h1>Quote of the day:</h1>
+  <entry>
+    <title type="html"><![CDATA[/Regular Expressions - Beginner's guide/]]></title>
+    <link href="http://simonseroussi.github.io/blog/2014/06/25/slash-regular-expressions-slash/"/>
+    <updated>2014-06-25T20:18:27-04:00</updated>
+    <id>http://simonseroussi.github.io/blog/2014/06/25/slash-regular-expressions-slash</id>
+    <content type="html"><![CDATA[<h1>Quote of the day:</h1>
 
 <blockquote><p>&ldquo;Some people, when confronted with a problem, think &lsquo;I know, I&rsquo;ll use regular expressions.&rsquo;
 Now they have two problems. &rdquo; &ndash; <a href="http://en.wikipedia.org/wiki/Jamie_Zawinski" title="Jamie Zawinski's Wikipedia Page"><strong>Jamie Zawinski</strong></a></p></blockquote>
@@ -172,7 +117,7 @@ They probably think you just insulted them&hellip; <strong>Stop reading this and
 
 <p>In curly brackets &lsquo;{}&rsquo;, I like to include the number for elements that require to appear only a certain number of times. In this case, we only want &lsquo;@&rsquo; to come up once.</p>
 
-<p>You might be thinking: &ldquo;what about dots? We don&rsquo;t have e-mail adresses that look like that: <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x73;&#x69;&#109;&#x6f;&#110;&#46;&#x73;&#101;&#x72;&#111;&#117;&#x73;&#115;&#105;&#46;&#x73;&#x63;&#104;&#x6f;&#x6f;&#108;&#46;&#x64;&#111;&#x65;&#115;&#46;&#x6e;&#111;&#116;&#46;&#101;&#x78;&#105;&#x73;&#x74;&#64;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#115;&#105;&#109;&#x6f;&#x6e;&#46;&#x73;&#101;&#114;&#111;&#117;&#x73;&#115;&#x69;&#x2e;&#115;&#x63;&#104;&#x6f;&#111;&#108;&#x2e;&#x64;&#111;&#x65;&#115;&#46;&#110;&#x6f;&#x74;&#46;&#x65;&#x78;&#105;&#x73;&#116;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#111;&#x6d;</a>&rdquo;!</p>
+<p>You might be thinking: &ldquo;what about dots? We don&rsquo;t have e-mail adresses that look like that: <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x73;&#105;&#109;&#x6f;&#x6e;&#46;&#115;&#101;&#x72;&#111;&#x75;&#115;&#x73;&#x69;&#x2e;&#115;&#99;&#x68;&#x6f;&#x6f;&#x6c;&#46;&#100;&#x6f;&#101;&#x73;&#x2e;&#x6e;&#111;&#x74;&#46;&#x65;&#x78;&#105;&#x73;&#116;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#115;&#105;&#x6d;&#111;&#x6e;&#x2e;&#115;&#101;&#114;&#x6f;&#x75;&#x73;&#115;&#x69;&#x2e;&#115;&#99;&#104;&#x6f;&#x6f;&#x6c;&#46;&#100;&#111;&#101;&#115;&#46;&#x6e;&#111;&#116;&#x2e;&#x65;&#120;&#x69;&#x73;&#116;&#64;&#x67;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a>&rdquo;!</p>
 
 <p>And you&rsquo;re right, but for this exercice, we&rsquo;ll be keeping things simple and only try to match (and not-match) the examples given above.</p>
 
@@ -224,12 +169,10 @@ For the dot, we&rsquo;ll simply write a <code>.</code> preceded by a backward sl
 
 <p>We can gather sort out data from a string into different objects by wrapping them in different parenthesis.</p>
 
-<p>In <strong>IRB</strong>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;SimonOnRegex: Grouping Like a Boss&quot;</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sr">/(^[a-z]*)(:)(.*)/i</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p>In <strong>IRB</strong>:
+<code>ruby
+my_string = "SimonOnRegex: Grouping Like a Boss".match(/(^[a-z]*)(:)(.*)/i)
+</code></p>
 
 <p>would give us:</p>
 
@@ -238,50 +181,34 @@ For the dot, we&rsquo;ll simply write a <code>.</code> preceded by a backward sl
 
 <p>We can then use the <code>[]</code> square bracket method and pass it parameters to access each grouping.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_string</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="c1"># =&gt; &quot;SimonOnRegex&quot;  </span>
-</span></code></pre></td></tr></table></div></figure>
+<p><code>ruby
+my_string[1] # =&gt; "SimonOnRegex"  
+</code></p>
 
+<p><code>ruby
+my_string[2] # =&gt; ":"
+</code></p>
 
-<p></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_string</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="c1"># =&gt; &quot;:&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_string</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="c1">#  =&gt; &quot; Grouping Like a Boss&quot; </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
+<p><code>ruby
+my_string[3] #  =&gt; " Grouping Like a Boss"
+</code></p>
 
 <p>We can assign them variables, using the <code>.captures</code> method.</p>
 
 <p>my_string = &ldquo;SimonOnRegex: Grouping Like a Boss&rdquo;
 one, two, three = my_string.match(/(^[a-z]<em>)(:)(.</em>)/i).captures</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">p</span> <span class="n">one</span>   <span class="c1">#=&gt; &quot;SimonOnRegex&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
+<p><code>ruby
+p one   #=&gt; "SimonOnRegex"
+</code></p>
 
+<p><code>ruby
+p two   #=&gt; ":"
+</code></p>
 
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">p</span> <span class="n">two</span>   <span class="c1">#=&gt; &quot;:&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">p</span> <span class="n">three</span>   <span class="c1">#=&gt; &quot; Grouping Like a Boss&quot; </span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>ruby
+p three   #=&gt; " Grouping Like a Boss"
+</code></p>
 
 <hr />
 
@@ -289,18 +216,16 @@ one, two, three = my_string.match(/(^[a-z]<em>)(:)(.</em>)/i).captures</p>
 
 <p>Designed to manipulate strings, regex are extermely popular to substitution.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;flatiron district&quot;</span><span class="o">.</span><span class="n">sub</span> <span class="sr">/district/</span><span class="p">,</span> <span class="s2">&quot;school&quot;</span> <span class="c1"># =&gt; &quot;flatiron school&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>ruby
+"flatiron district".sub /district/, "school" # =&gt; "flatiron school"
+</code></p>
 
 <p>You might be thinking: <em>&ldquo;this is useless, I can use a regular gsub and get the same result without bothering about all the annoying regex syntax!!&rdquo;</em>
 And you are right.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;flatiron district&quot;</span><span class="o">.</span><span class="n">sub</span> <span class="s2">&quot;district&quot;</span><span class="p">,</span> <span class="s2">&quot;school&quot;</span> <span class="c1"># =&gt; &quot;flatiron school&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p><code>ruby
+"flatiron district".sub "district", "school" # =&gt; "flatiron school"
+</code></p>
 
 <p>Imagine however, if you could combine the power of grouping with substitutions?<br/>
 You can!</p>
@@ -310,16 +235,14 @@ You can!</p>
 
 <p>Ring a bell?</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_phone</span> <span class="o">=</span> <span class="mi">1234567890</span>
-</span><span class='line'><span class="n">my_phone</span><span class="o">.</span><span class="n">to_s</span><span class="o">.</span><span class="n">sub</span> <span class="sr">/(\d{3})(\d{3})(\d{4})/</span><span class="p">,</span> <span class="s1">&#39;(\1) \2-\3&#39;</span>
-</span><span class='line'><span class="c1"># =&gt; &quot;(123) 456-7890&quot;  </span>
-</span></code></pre></td></tr></table></div></figure>
+<p>``` ruby
+my_phone = 1234567890
+my_phone.to_s.sub /(\d{3})(\d{3})(\d{4})/, &lsquo;(\1) \2-\3&rsquo;</p>
 
+<h1>=> &ldquo;(123) 456-7890&rdquo;</h1>
 
-<p>Here, we&rsquo;re simply grouping the three first digit (under default variable \1) and putting them in parenthesis, the three next digits (\2) preceding them by a space and adding a dash after them, and then the last four digit.</p>
+<p>```
+Here, we&rsquo;re simply grouping the three first digit (under default variable \1) and putting them in parenthesis, the three next digits (\2) preceding them by a space and adding a dash after them, and then the last four digit.</p>
 
 <p>This is simply magical. And it makes a lot of sense..</p>
 
@@ -336,41 +259,7 @@ You can!</p>
 <a href="http://rubyxp.com/" title="Rubyxp Website"><strong>Rubyxp</strong></a>, a nice alternative to Rubular. <br/>
 <a href="http://www.rexegg.com/" title="Rexegg Website"><strong>Rexegg</strong></a>, a great website dedicated to regex tutorials<br/>
 <a href="http://www.regular-expressions.info/" title="Regular-Expressions.info Website"><strong>Regular-Expressions.info</strong></a>, another one, because why the fuck not.</p>
-</div>
-
-</article>
+]]></content>
+  </entry>
   
-</div>
-<ul class="article-pagination">
-  
-  
-</ul>
-
-    <footer role="contentinfo" class="footer"><div class="footer-icons">
-  <a href="https://twitter.com/@simonseroussi" target="_blank" class="icon-twitter icon-2x"></a>
-  <a href="https://github.com/simonseroussi" target="_blank" class="icon-github icon-2x"></a>
-  <a href="/atom.xml" target="_blank" class="icon-rss icon-2x"></a>
-</div>
-<p>&copy; 2014 Simon Seroussi, Powered by <a href="http://octopress.org" target="_blank">Octopress</a> &amp; <a href="https://github.com/midnightSuyama/respectMattt" target="_blank">respectMattt</a></p>
-
-</footer>
-    
-
-
-
-
-<script language="JavaScript">
-$('.article-index').isotope({
-  articleSelector: '.article',
-  masonry: {
-    columnWidth: 310
-  }
-});
-
-$('.lettering').lettering();
-</script>
-
-
-  </div>
-</body>
-</html>
+</feed>

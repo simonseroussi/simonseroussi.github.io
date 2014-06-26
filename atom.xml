@@ -4,7 +4,7 @@
   <title><![CDATA[The Eternal Scholar - A French Fry's Journey in Life and the Science of Operations.]]></title>
   <link href="http://simonseroussi.github.io/atom.xml" rel="self"/>
   <link href="http://simonseroussi.github.io/"/>
-  <updated>2014-06-11T19:24:23-04:00</updated>
+  <updated>2014-06-26T01:17:43-04:00</updated>
   <id>http://simonseroussi.github.io/</id>
   <author>
     <name><![CDATA[Simon Seroussi]]></name>
@@ -14,61 +14,273 @@
 
   
   <entry>
-    <title type="html"><![CDATA[/Regular Expressions/]]></title>
-    <link href="http://simonseroussi.github.io/blog/2014/06/11/slash-regular-expressions-slash/"/>
-    <updated>2014-06-11T19:18:27-04:00</updated>
-    <id>http://simonseroussi.github.io/blog/2014/06/11/slash-regular-expressions-slash</id>
-    <content type="html"><![CDATA[<h4>Image of the day:</h4>
-
-<p><img src="http://imgs.xkcd.com/comics/regular_expressions.png" title="Regular Expressions" alt="alt text" /></p>
-
-<hr />
-
-<h4>Quote of the day:</h4>
+    <title type="html"><![CDATA[/Regular Expressions - Beginner's guide/]]></title>
+    <link href="http://simonseroussi.github.io/blog/2014/06/25/slash-regular-expressions-slash/"/>
+    <updated>2014-06-25T20:18:27-04:00</updated>
+    <id>http://simonseroussi.github.io/blog/2014/06/25/slash-regular-expressions-slash</id>
+    <content type="html"><![CDATA[<h1>Quote of the day:</h1>
 
 <blockquote><p>&ldquo;Some people, when confronted with a problem, think &lsquo;I know, I&rsquo;ll use regular expressions.&rsquo;
 Now they have two problems. &rdquo; &ndash; <a href="http://en.wikipedia.org/wiki/Jamie_Zawinski" title="Jamie Zawinski's Wikipedia Page"><strong>Jamie Zawinski</strong></a></p></blockquote>
 
-<h4>What are they?</h4>
+<hr />
 
-<blockquote><p>A regular expression provides a concise and flexible means to &ldquo;match&rdquo; (specify and recognize) strings of text, such as particular characters, words, or patterns of characters. Common abbreviations for &ldquo;regular expression&rdquo; include regex and regexp.
-&ndash; From <a href="http://www.codecademy.com/fr/courses/javascript-intermediate-en-NJ7Lr/0/1" title="Codecademy Website"><strong>Codecademy</strong></a></p></blockquote>
+<p>Hey everyone, my name is <strong>Simon</strong> but a lot of my American friends call me <strong>&lsquo;French Fry&rsquo;</strong> (hence the blog&rsquo;s title).
+I&rsquo;ve insisted that this name doesn&rsquo;t reflect my less-than-before skinniness, but as a lack of any fitting alternative (french toast and french needle don&rsquo;t necessarily display a better portrait), I&rsquo;ve proudly rolled with it.</p>
 
-<p>In other words, regular expressions are pattern finders. An easy one looks like that..</p>
+<p>I&rsquo;m currently enrolled at the <a href="http://flatironschool.com" title="Flatiron's School Website"><strong>Flatiron School</strong></a>, an amazing 12-weeks intensive <strong>coding bootcamp</strong> in New York City&rsquo;s financial district.</p>
 
-<p>They can be daunting at first&hellip; but in reality can be read and writtten easily if you give them some time and attention.</p>
+<p>This blog will be the extension of a broader personnal website .. but you&rsquo;ll have to wait a little more for that.
+Meanwhile, feel free to check out my technical, less technical and non-technical posts on this blog powered by    <a href="www.octopress.org" title="Octopress, A blogging framework for hackers."><strong>octopress</strong></a>!</p>
 
-<h4>Exercice:</h4>
+<p>This first short blog post will focus on Regular Expressions and my tips to write those beauties.</p>
 
-<p>In a recent lab, <a href="https://github.com/flatiron-school-students/regex_rally-ruby-005" title="Flatiron's Github Repo"><strong>Regex_rally-ruby-005</strong></a> we were asked to write a regular expression that only matches valid email addresses.</p>
+<hr />
 
-<p>my_regex = _</p>
+<h1>What are they?</h1>
 
-<p>Through a list of e-mails the <em>spec</em> wanted our regular expression to match <em>or</em>** not match, implicit directions on how to construct our regex are being given:</p>
+<p><em>A regular expression provides a concise and flexible means to &ldquo;match&rdquo; (specify and recognize) strings of text, such as particular characters, words, or patterns of characters. Common abbreviations for &ldquo;regular expression&rdquo; include regex and regexp.</em><br/>
+&ndash; From <a href="http://www.codecademy.com/fr/courses/javascript-intermediate-en-NJ7Lr/0/1" title="Codecademy Website"><strong>Codecademy</strong></a></p>
+
+<p>Interestingly, they&rsquo;re present in almost every programming language (some even, like Perl, rely entirely on them) but are too often over-used, wrongly used or not used at all when they could in fact make pattern searching, and even pattern replacement, waaaaaayyyyyyyyyy easier! I&rsquo;ll only go in the basics.</p>
+
+<p>In other words, regular expressions in their basic form are pattern finders. An easy one looks like that..</p>
+
+<pre><code>/^Ruby\s{1}+[i]{1}[s]{1}\s{1}amazing$/
+</code></pre>
+
+<p>This expression would only match the string <strong>Ruby is amazing</strong>, nothing else. Remember, Regex are case and space sensitive!</p>
+
+<p>They can be daunting at first&hellip; but if you give them enough time and attention, they reveal themselves to be fun to write and read.</p>
+
+<p><strong>I promise.</strong></p>
+
+<p>Not convinced? Follow me through this short exercice.</p>
+
+<hr />
+
+<h1>Exercice: Regex in 3 steps</h1>
+
+<p>In a recent lab, <a href="https://github.com/flatiron-school-students/regex_rally-ruby-005" title="Flatiron's Github Repo"><strong>Regex_rally-ruby-005</strong></a> students from the <a href="http://flatironschool.com/" title="Flatiron School Website"><strong>Flatiron School </strong></a> were asked to write a regular expression that matches only given valid email addresses.</p>
+
+<p>We are implicitly given the instructions to construct our Regular Expression through a list of e-mails listed in our <em>specs</em> file.</p>
+
+<pre><code>match = %w{steven@flatironschool.com john.doe@example.com phil@example.co.uk }
+
+do_not_match = ["steven@flatironschool", "user at example.com", "user@example.com@example.com"]
+</code></pre>
+
+<p>Let&rsquo;s make those &lsquo;match&rsquo; requirements a little more complex by taking integers into account:</p>
+
+<pre><code>match = %w{steven@flatironschool.com john.doe@example.com phil@example.co.uk simon123@gmail.com}
+</code></pre>
+
+<h3><strong>Step 1.</strong></h3>
+
+<p>The first important step is to write the opening and closing forward slashes for our regualar expressions (le <strong>DUH</strong>) as follows :</p>
+
+<pre><code>/ /
+</code></pre>
+
+<p>To avoid ensuing confusions and errors, Divide and Conquer. Don&rsquo;t just stare at the e-mail adresses and try coming up with the right options by glancing at Regex documentation. In other words I&rsquo;d comment out all the requirement your regular expression needs to take into account.</p>
+
+<pre><code>**#always:  
+starts with a string,  
+only one '@',   
+includes a '.',  
+ends with a string.**  
+
+** #sometimes:  
+1. includes another '.'  
+2. include integers  
+3. can include another string after "."  
+4. can include another string ('.co.uk') before the ending string.**  
+
+** #never:  
+1. includes spaces. ** 
+</code></pre>
+
+<h3><strong>Step 2.</strong>###</h3>
+
+<p>Personally, I like writing down what the regular expression needs to do in more <em>&lsquo;normal&rsquo;</em> terms.
+Let&rsquo;s face it, regular expressions can be cryptic, to say the least. Just try to narrate a regex at loud and look at the face of people around you.
+They probably think you just insulted them&hellip; <strong>Stop reading this and run</strong>!</p>
+
+<p><img src="http://medias.lepost.fr/ill/2008/11/06/h-20-1318462-1225996177.gif" title="Capitaine Haddocks Insultes" alt="alt text" /></p>
+
+<p>In this particular example, I would write something like&hellip;</p>
+
+<pre><code>string(integers)(.)(_)(integers)(string)@{1}(string).(string)(.)string 
+</code></pre>
+
+<p>In my &lsquo;syntax&rsquo;, I like to place in parenthesis the optional matches (&lsquo;sometimes&rsquo; in our notes) and the mandatory ones (&lsquo;always&rsquo;) without parenthsis.</p>
+
+<p>In curly brackets &lsquo;{}&rsquo;, I like to include the number for elements that require to appear only a certain number of times. In this case, we only want &lsquo;@&rsquo; to come up once.</p>
+
+<p>You might be thinking: &ldquo;what about dots? We don&rsquo;t have e-mail adresses that look like that: <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x73;&#x69;&#109;&#x6f;&#110;&#46;&#x73;&#101;&#x72;&#111;&#117;&#x73;&#115;&#105;&#46;&#x73;&#x63;&#104;&#x6f;&#x6f;&#108;&#46;&#x64;&#111;&#x65;&#115;&#46;&#x6e;&#111;&#116;&#46;&#101;&#x78;&#105;&#x73;&#x74;&#64;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;">&#115;&#105;&#109;&#x6f;&#x6e;&#46;&#x73;&#101;&#114;&#111;&#117;&#x73;&#115;&#x69;&#x2e;&#115;&#x63;&#104;&#x6f;&#111;&#108;&#x2e;&#x64;&#111;&#x65;&#115;&#46;&#110;&#x6f;&#x74;&#46;&#x65;&#x78;&#105;&#x73;&#116;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#111;&#x6d;</a>&rdquo;!</p>
+
+<p>And you&rsquo;re right, but for this exercice, we&rsquo;ll be keeping things simple and only try to match (and not-match) the examples given above.</p>
+
+<h3><strong>Step 3.</strong></h3>
+
+<p>Now, you can finally start writing your regular expression!</p>
+
+<p>We want our regular expression to always begin with a string. We&rsquo;ll therefore use the option <code>\A</code> (Start of string) followed by the expression pattern <code>[a-z]</code> (any single character in the range a-z). With regex, we then need to precise the number of characters we want to match. Here, we need AT LEAST one, expressed by the option <code>a+</code>(one or more of a), <strong>a</strong> being the expression being numbered, here <code>\A[a-z]</code>.</p>
+
+<pre><code>/\A[a-z]+/
+</code></pre>
+
+<p>We want our regex to match e-mail addresses that possible have numbers or dots (or both!) after the initial string. However, we do not want any white space. We will use a backward slash to avoid matching white spaces (<em>a regex option (x) can also make your regex ignore whitespace, but we&rsquo;ll see this in another post</em>).</p>
+
+<p>For digits, we use the pattern <code>\d</code> (any digit).
+For the dot, we&rsquo;ll simply write a <code>.</code> preceded by a backward slash. The dot alone is in fact an option in regex, in means &ldquo;any single character&rdquo;.. without a backward slash indicating that we&rsquo;re matching a dot, you could fall in a rampant matching spree you probably want to avoid.</p>
+
+<p>Our digits and dot need to remain optional, so we&rsquo;ll use this option <code>a*</code> (zero or more of a).</p>
+
+<pre><code>/\A[a-z]+\d*\.*
+</code></pre>
+
+<p>We then want another optional string, and then an <code>@</code> that can only be matched once. For that we use <code>a{3}</code> (exactly 3 of a). Here, <code>@{1}</code>.</p>
+
+<pre><code>/\A[a-z]+\d*\.*[a-z]*@{1}/
+</code></pre>
+
+<p>Now, we want another optional string (for <strong>email provider</strong> i.e: gmail), a mandatory dot (<strong>.</strong>com), a mandatory string (<strong>com</strong>), an optional dot and optional string (.com<strong>.uk</strong>).</p>
+
+<pre><code>/\A[a-z]+\d*\.*[a-z]*@{1}[a-z]+\.[a-z]+\.*[a-z]*/
+</code></pre>
+
+<p>Ultimately, we want to indicate the regex that whatever string we match, it is ending now. Nothing else should be matched after that. We use this expression pattern <code>\z</code>, meanin end of string.</p>
+
+<pre><code>/\A[a-z]+\d*\.*[a-z]*@{1}[a-z]+\.[a-z]+\.*[a-z]*\z/
+</code></pre>
+
+<p>This takes some time, but its a safe method to write regular expressions in one try&hellip; without having to constantly return to your regex and trying to fix it, often only making it worse.</p>
+
+<p><img src="http://gocomics.typepad.com/.a/6a00d8341c5f3053ef0192ab478d7e970d-pi" title="Repetitive mistakes" alt="alt text" /></p>
+
+<h1>How to use them</h1>
+
+<hr />
+
+<h3><strong>MatchData Objects:</strong></h3>
+
+<p>Remember, regular expressions are merely instances of the Regex Class. In this sense, there are merely objects, and can be treated as sort!</p>
+
+<p>We can gather sort out data from a string into different objects by wrapping them in different parenthesis.</p>
+
+<p>In <strong>IRB</strong>:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">match</span> <span class="o">=</span> <span class="sx">%w{steven@flatironschool.com john.doe@example.com phil@example.co.uk }</span>
-</span><span class='line'><span class="n">do_not_match</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;steven@flatironschool&quot;</span><span class="p">,</span> <span class="s2">&quot;user at example.com&quot;</span><span class="p">,</span> <span class="s2">&quot;user@example.com@example.com&quot;</span><span class="o">]</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;SimonOnRegex: Grouping Like a Boss&quot;</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sr">/(^[a-z]*)(:)(.*)/i</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<ol>
-<li><p>The first important step is to write the opening and closing forward slashes of our regualar expressions (LE DUH.) as follows :</p></li>
-<li></li>
-</ol>
+<p>would give us:</p>
+
+<pre><code> =&gt; #&lt;MatchData "SimonOnRegex: Grouping Like a Boss" 1:"SimonOnRegex" 2:":" 3:" Grouping Like a Boss"&gt; 
+</code></pre>
+
+<p>We can then use the <code>[]</code> square bracket method and pass it parameters to access each grouping.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_string</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="c1"># =&gt; &quot;SimonOnRegex&quot;  </span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-<h4>How to use them in your code?</h4>
+<p></p>
 
-<h4>When to use regex?</h4>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_string</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="c1"># =&gt; &quot;:&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<h4>Useful Ressources:</h4>
 
-<p><a href="http://rubular.com/" title="Rubular Website"><strong>Rubular</strong></a>
-<a href="http://rubyxp.com/" title="Rubyxp Website"><strong>Rubyxp</strong></a>, a nice alternative to Rubular.
-<a href="http://www.rexegg.com/" title="Rexegg Website"><strong>Rexegg</strong></a>
-<a href="http://www.regular-expressions.info/" title="Regular-Expressions.info Website"><strong>Regular-Expressions.info</strong></a></p>
+<p></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_string</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="c1">#  =&gt; &quot; Grouping Like a Boss&quot; </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>We can assign them variables, using the <code>.captures</code> method.</p>
+
+<p>my_string = &ldquo;SimonOnRegex: Grouping Like a Boss&rdquo;
+one, two, three = my_string.match(/(^[a-z]<em>)(:)(.</em>)/i).captures</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">p</span> <span class="n">one</span>   <span class="c1">#=&gt; &quot;SimonOnRegex&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">p</span> <span class="n">two</span>   <span class="c1">#=&gt; &quot;:&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">p</span> <span class="n">three</span>   <span class="c1">#=&gt; &quot; Grouping Like a Boss&quot; </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<hr />
+
+<h3><strong>Substitutions:</strong></h3>
+
+<p>Designed to manipulate strings, regex are extermely popular to substitution.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;flatiron district&quot;</span><span class="o">.</span><span class="n">sub</span> <span class="sr">/district/</span><span class="p">,</span> <span class="s2">&quot;school&quot;</span> <span class="c1"># =&gt; &quot;flatiron school&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You might be thinking: <em>&ldquo;this is useless, I can use a regular gsub and get the same result without bothering about all the annoying regex syntax!!&rdquo;</em>
+And you are right.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;flatiron district&quot;</span><span class="o">.</span><span class="n">sub</span> <span class="s2">&quot;district&quot;</span><span class="p">,</span> <span class="s2">&quot;school&quot;</span> <span class="c1"># =&gt; &quot;flatiron school&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Imagine however, if you could combine the power of grouping with substitutions?<br/>
+You can!</p>
+
+<p>You have that ugly digit string: &ldquo;1234567890&rdquo; <br/>
+&hellip; and you want a beautiful, formatted phone number &ldquo;(XXX) XXXX-XXX&rdquo;</p>
+
+<p>Ring a bell?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_phone</span> <span class="o">=</span> <span class="mi">1234567890</span>
+</span><span class='line'><span class="n">my_phone</span><span class="o">.</span><span class="n">to_s</span><span class="o">.</span><span class="n">sub</span> <span class="sr">/(\d{3})(\d{3})(\d{4})/</span><span class="p">,</span> <span class="s1">&#39;(\1) \2-\3&#39;</span>
+</span><span class='line'><span class="c1"># =&gt; &quot;(123) 456-7890&quot;  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here, we&rsquo;re simply grouping the three first digit (under default variable \1) and putting them in parenthesis, the three next digits (\2) preceding them by a space and adding a dash after them, and then the last four digit.</p>
+
+<p>This is simply magical. And it makes a lot of sense..</p>
+
+<h2><strong>###Now go save the day with Regex!</strong>###</h2>
+
+<p><img src="http://imgs.xkcd.com/comics/regular_expressions.png" title="Regex Savior" alt="alt text" />
+<a href="ttps://xkcd.com/" title="xkcd Website"><strong>xkcd, A Webcomic of Romance, Sarcasm, Math, and Language</strong></a></p>
+
+<hr />
+
+<h2>Useful Ressources:</h2>
+
+<p><a href="http://rubular.com/" title="Rubular Website"><strong>Rubular</strong></a>, a Ruby regular expression editor.<br/>
+<a href="http://rubyxp.com/" title="Rubyxp Website"><strong>Rubyxp</strong></a>, a nice alternative to Rubular. <br/>
+<a href="http://www.rexegg.com/" title="Rexegg Website"><strong>Rexegg</strong></a>, a great website dedicated to regex tutorials<br/>
+<a href="http://www.regular-expressions.info/" title="Regular-Expressions.info Website"><strong>Regular-Expressions.info</strong></a>, another one, because why the fuck not.</p>
 ]]></content>
   </entry>
   
