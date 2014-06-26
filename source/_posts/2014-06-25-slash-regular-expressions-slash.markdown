@@ -148,7 +148,7 @@ without having to constantly return to your code and trying to debug it, often o
 #How to use them#
 
 ###MatchData Objects:###
-Remember, regular expressions are merely instances of the Regex Class. In this sense, there are merely objects, and can be treated as sort!  
+Remember, regular expressions are merely instances of the Regex Class. In this sense, they are merely objects, and can be treated as the same!  
 
 We can gather sort out data from a string into different objects by wrapping them in different parenthesis.  
 
@@ -186,7 +186,7 @@ p three   #=> " Grouping Like a Boss"
 -----
 
 ###Substitutions:###
-Designed to manipulate strings, regex are extermely popular to substitution. 
+Regex are designed to search through strings and manipulate them. Thereof, they are extermely popular for substitution. 
 
 ``` ruby
 "flatiron district".sub /district/, "school" # => "flatiron school"
