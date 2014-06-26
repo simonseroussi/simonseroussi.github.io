@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Flatiron | The Eternal Scholar - A French Fry's Journey in Life and the Science of Operations.]]></title>
   <link href="http://simonseroussi.github.io/blog/categories/flatiron/atom.xml" rel="self"/>
   <link href="http://simonseroussi.github.io/"/>
-  <updated>2014-06-26T11:52:41-04:00</updated>
+  <updated>2014-06-26T11:54:36-04:00</updated>
   <id>http://simonseroussi.github.io/</id>
   <author>
     <name><![CDATA[Simon Seroussi]]></name>
@@ -67,9 +67,9 @@ Remember, Regex need to be written with case and space sensitivity in mind!</p>
 <p>We hold implicitly the instructions to construct our Regular Expression through a list of e-mails listed in our <em>specs</em> file.</p>
 
 <p>```
-match = %w{<a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x73;&#116;&#101;&#118;&#101;&#x6e;&#64;&#102;&#x6c;&#97;&#116;&#x69;&#114;&#x6f;&#110;&#115;&#99;&#104;&#x6f;&#111;&#x6c;&#46;&#x63;&#111;&#109;">&#x73;&#116;&#101;&#118;&#101;&#x6e;&#64;&#x66;&#x6c;&#97;&#x74;&#105;&#114;&#x6f;&#x6e;&#115;&#x63;&#x68;&#111;&#111;&#x6c;&#46;&#x63;&#x6f;&#109;</a> <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x6a;&#111;&#104;&#110;&#x2e;&#100;&#x6f;&#101;&#64;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#x63;&#111;&#109;">&#106;&#x6f;&#x68;&#110;&#46;&#100;&#111;&#x65;&#x40;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;</a> <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x70;&#x68;&#105;&#x6c;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#x2e;&#x75;&#x6b;">&#112;&#104;&#105;&#108;&#x40;&#101;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x2e;&#x75;&#107;</a> }</p>
+match = %w{<a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#115;&#116;&#x65;&#x76;&#101;&#x6e;&#x40;&#102;&#x6c;&#x61;&#x74;&#x69;&#114;&#111;&#x6e;&#115;&#x63;&#104;&#111;&#111;&#108;&#x2e;&#99;&#x6f;&#109;">&#115;&#x74;&#101;&#x76;&#101;&#x6e;&#64;&#x66;&#108;&#x61;&#x74;&#105;&#x72;&#x6f;&#x6e;&#115;&#99;&#x68;&#111;&#111;&#108;&#x2e;&#x63;&#111;&#x6d;</a> <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#106;&#x6f;&#104;&#x6e;&#x2e;&#100;&#111;&#x65;&#64;&#x65;&#x78;&#x61;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#111;&#109;">&#106;&#x6f;&#x68;&#110;&#46;&#x64;&#x6f;&#x65;&#x40;&#101;&#120;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;</a> <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x70;&#104;&#x69;&#x6c;&#x40;&#101;&#120;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#x6f;&#46;&#117;&#107;">&#x70;&#x68;&#x69;&#x6c;&#64;&#101;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#x2e;&#x75;&#107;</a> }</p>
 
-<p>do_not_match = [&ldquo;steven@flatironschool&rdquo;, &ldquo;user at example.com&rdquo;, &ldquo;user@<a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#109;&#x40;&#101;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#101;&#x78;&#97;&#109;&#x70;&#x6c;&#x65;&#46;&#99;&#111;&#x6d;&#64;&#x65;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;</a>&rdquo;]
+<p>do_not_match = [&ldquo;steven@flatironschool&rdquo;, &ldquo;user at example.com&rdquo;, &ldquo;user@<a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#99;&#111;&#109;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#x65;&#x78;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#x63;&#111;&#x6d;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#109;</a>&rdquo;]
 ```</p>
 
 <p>Let&rsquo;s make those &lsquo;match&rsquo; requirements a little more complex by taking integers into account:</p>
