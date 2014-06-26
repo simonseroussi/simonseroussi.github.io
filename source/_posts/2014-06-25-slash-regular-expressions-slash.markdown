@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "/Regular Expressions in Ruby/ - A Starter's Guide"
+title: "/Regular Expressions in Ruby/ - Intro "
 date: 2014-06-25 20:18:27 -0400
 comments: true
-categories: Flatiron Regex Ruby Regular Expressions
+categories: Flatiron Regex Ruby Regular Expressions Beginner Matchdata Substitution
 ---
 
 
