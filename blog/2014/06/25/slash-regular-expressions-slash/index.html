@@ -121,7 +121,7 @@ Remember, Regex need to be written with case and space sensitivity in mind!</p>
 
 <hr />
 
-<h1>E-mails Checker: Regex in 3 steps</h1>
+<h1>Building a small E-mail Validator: Regex in 3 steps</h1>
 
 <p>In a recent lab, <a href="https://github.com/flatiron-school-students/regex_rally-ruby-005" title="Flatiron's Github Repo"><strong>Regex_rally-ruby-005</strong></a>, students from the <a href="http://flatironschool.com/" title="Flatiron School Website"><strong>Flatiron School </strong></a> were asked to write a regular expression that only matches given valid email addresses.</p>
 
@@ -214,7 +214,7 @@ For the dot, we&rsquo;ll simply write a <code>.</code> preceded by a backward sl
 <pre><code>/\A[a-z]+\d*\.*[a-z]*@{1}[a-z]+\.[a-z]+\.*[a-z]*/
 </code></pre>
 
-<p>Ultimately, we want to indicate the regex that whatever string we match, it is ending now. Nothing else should be matched after that. We use this expression pattern <code>\z</code>, meanin end of string.</p>
+<p>Ultimately, we want to indicate the regex that whatever string we match, it is ending now. Nothing else should be matched after that. We use this expression pattern <code>\z</code>, which <strong>means the string ends</strong>.</p>
 
 <pre><code>/\A[a-z]+\d*\.*[a-z]*@{1}[a-z]+\.[a-z]+\.*[a-z]*\z/
 </code></pre>
