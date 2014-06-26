@@ -47,7 +47,7 @@ They can be daunting at first... but if you give them enough time and attention,
 Not convinced? Follow me through this short exercice. 
 
 -----
-#E-mails Checker: Regex in 3 steps#
+#Building a small E-mail Validator: Regex in 3 steps#
 
 In a recent lab, [**Regex_rally-ruby-005**](https://github.com/flatiron-school-students/regex_rally-ruby-005 "Flatiron's Github Repo"), students from the [**Flatiron School **](http://flatironschool.com/ "Flatiron School Website") were asked to write a regular expression that only matches given valid email addresses. 
 
@@ -133,7 +133,7 @@ Now, we want another optional string (for **email provider** i.e: gmail), a mand
 
     /\A[a-z]+\d*\.*[a-z]*@{1}[a-z]+\.[a-z]+\.*[a-z]*/
 
-Ultimately, we want to indicate the regex that whatever string we match, it is ending now. Nothing else should be matched after that. We use this expression pattern ```\z```, meanin end of string.
+Ultimately, we want to indicate the regex that whatever string we match, it is ending now. Nothing else should be matched after that. We use this expression pattern ```\z```, which **means the string ends**.
 
     /\A[a-z]+\d*\.*[a-z]*@{1}[a-z]+\.[a-z]+\.*[a-z]*\z/
 
