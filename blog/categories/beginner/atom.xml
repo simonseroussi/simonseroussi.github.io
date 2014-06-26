@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Beginner | The Eternal Scholar - A French Fry's Journey in Life and the Science of Operations.]]></title>
   <link href="http://simonseroussi.github.io/blog/categories/beginner/atom.xml" rel="self"/>
   <link href="http://simonseroussi.github.io/"/>
-  <updated>2014-06-26T01:42:22-04:00</updated>
+  <updated>2014-06-26T09:50:14-04:00</updated>
   <id>http://simonseroussi.github.io/</id>
   <author>
     <name><![CDATA[Simon Seroussi]]></name>
@@ -67,9 +67,9 @@ Remember, Regex need to be written with case and space sensitivity in mind!</p>
 <p>We hold implicitly the instructions to construct our Regular Expression through a list of e-mails listed in our <em>specs</em> file.</p>
 
 <p>```
-match = %w{<a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x73;&#x74;&#x65;&#118;&#101;&#x6e;&#64;&#102;&#x6c;&#97;&#x74;&#x69;&#114;&#111;&#110;&#x73;&#99;&#104;&#111;&#111;&#108;&#46;&#99;&#x6f;&#109;">&#x73;&#x74;&#101;&#118;&#101;&#110;&#x40;&#x66;&#108;&#97;&#x74;&#x69;&#114;&#x6f;&#110;&#x73;&#99;&#x68;&#x6f;&#x6f;&#x6c;&#46;&#x63;&#111;&#x6d;</a> <a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x6a;&#x6f;&#x68;&#x6e;&#x2e;&#100;&#111;&#x65;&#64;&#x65;&#120;&#x61;&#109;&#112;&#108;&#101;&#46;&#x63;&#x6f;&#x6d;">&#106;&#x6f;&#x68;&#x6e;&#x2e;&#100;&#111;&#x65;&#x40;&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#109;</a> <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#112;&#104;&#105;&#x6c;&#64;&#x65;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#x2e;&#117;&#107;">&#112;&#104;&#105;&#108;&#x40;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#99;&#111;&#46;&#117;&#x6b;</a> }</p>
+match = %w{<a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#115;&#116;&#101;&#x76;&#101;&#110;&#64;&#102;&#108;&#x61;&#116;&#x69;&#x72;&#x6f;&#110;&#115;&#99;&#104;&#111;&#x6f;&#108;&#46;&#x63;&#x6f;&#x6d;">&#115;&#116;&#x65;&#x76;&#x65;&#x6e;&#x40;&#102;&#x6c;&#x61;&#116;&#x69;&#x72;&#111;&#110;&#115;&#99;&#x68;&#x6f;&#x6f;&#x6c;&#46;&#x63;&#x6f;&#109;</a> <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#58;&#x6a;&#x6f;&#x68;&#110;&#46;&#x64;&#111;&#101;&#64;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;">&#106;&#111;&#x68;&#x6e;&#x2e;&#x64;&#x6f;&#x65;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;</a> <a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#112;&#104;&#x69;&#108;&#64;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#111;&#x2e;&#x75;&#x6b;">&#112;&#104;&#105;&#108;&#x40;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#46;&#117;&#107;</a> }</p>
 
-<p>do_not_match = [&ldquo;steven@flatironschool&rdquo;, &ldquo;user at example.com&rdquo;, &ldquo;user@<a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#58;&#101;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#x2e;&#99;&#111;&#109;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#101;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#109;&#64;&#101;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#111;&#x6d;</a>&rdquo;]
+<p>do_not_match = [&ldquo;steven@flatironschool&rdquo;, &ldquo;user at example.com&rdquo;, &ldquo;user@<a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;&#64;&#101;&#x78;&#97;&#109;&#112;&#108;&#x65;&#46;&#99;&#111;&#109;">&#x65;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#46;&#x63;&#x6f;&#x6d;&#x40;&#101;&#120;&#97;&#109;&#112;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a>&rdquo;]
 ```</p>
 
 <p>Let&rsquo;s make those &lsquo;match&rsquo; requirements a little more complex by taking integers into account:</p>
@@ -197,8 +197,10 @@ my_string[3] #  =&gt; " Grouping Like a Boss"
 
 <p>We can assign them variables, using the <code>.captures</code> method.</p>
 
-<p>my_string = &ldquo;SimonOnRegex: Grouping Like a Boss&rdquo;
-one, two, three = my_string.match(/(^[a-z]<em>)(:)(.</em>)/i).captures</p>
+<p><code>ruby
+my_string = "SimonOnRegex: Grouping Like a Boss"
+one, two, three = my_string.match(/(^[a-z]*)(:)(.*)/i).captures
+</code></p>
 
 <p><code>ruby
 p one   #=&gt; "SimonOnRegex"
@@ -227,9 +229,9 @@ And you are right.</p>
 
 <p><strong>You can!</strong></p>
 
-<p>You have that ugly string of digits: &ldquo;1234567890&rdquo; &hellip; and you want a beautiful, formatted phone number: &ldquo;(XXX) XXXX-XXX&rdquo;</p>
+<p>Let&rsquo;s say we have that ugly string of digits: &ldquo;1234567890&rdquo; &hellip; and you want a beautiful, formatted phone number: &ldquo;(XXX) XXXX-XXX&rdquo;..</p>
 
-<p>Ring a bell?</p>
+<p><strong>Ring a bell?</strong></p>
 
 <p>``` ruby
 my_phone = 1234567890
@@ -238,7 +240,7 @@ my_phone.to_s.sub /(\d{3})(\d{3})(\d{4})/, &lsquo;(\1) \2-\3&rsquo;</p>
 <h1>=> &ldquo;(123) 456-7890&rdquo;</h1>
 
 <p>```
-Here, we&rsquo;re simply grouping the three first digit (under default variable \1) and putting them in parenthesis, the three next digits (\2) preceding them by a space and adding a dash after them, and then the last four digit.</p>
+Here, we&rsquo;re simply <strong>grouping</strong> the three first digit (under default variable \1) and putting them in parenthesis, the three next digits (\2) preceding them by a space and adding a dash after them, and then the last four digit.</p>
 
 <p>This is simply beautiful. And it actually makes a lot of sense!</p>
 

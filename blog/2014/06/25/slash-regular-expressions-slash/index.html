@@ -263,8 +263,14 @@ without having to constantly return to your code and trying to debug it, often o
 
 <p>We can assign them variables, using the <code>.captures</code> method.</p>
 
-<p>my_string = &ldquo;SimonOnRegex: Grouping Like a Boss&rdquo;
-one, two, three = my_string.match(/(^[a-z]<em>)(:)(.</em>)/i).captures</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;SimonOnRegex: Grouping Like a Boss&quot;</span>
+</span><span class='line'><span class="n">one</span><span class="p">,</span> <span class="n">two</span><span class="p">,</span> <span class="n">three</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sr">/(^[a-z]*)(:)(.*)/i</span><span class="p">)</span><span class="o">.</span><span class="n">captures</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -298,9 +304,9 @@ And you are right.</p>
 
 <p><strong>You can!</strong></p>
 
-<p>You have that ugly string of digits: &ldquo;1234567890&rdquo; &hellip; and you want a beautiful, formatted phone number: &ldquo;(XXX) XXXX-XXX&rdquo;</p>
+<p>Let&rsquo;s say we have that ugly string of digits: &ldquo;1234567890&rdquo; &hellip; and you want a beautiful, formatted phone number: &ldquo;(XXX) XXXX-XXX&rdquo;..</p>
 
-<p>Ring a bell?</p>
+<p><strong>Ring a bell?</strong></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -311,7 +317,7 @@ And you are right.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Here, we&rsquo;re simply grouping the three first digit (under default variable \1) and putting them in parenthesis, the three next digits (\2) preceding them by a space and adding a dash after them, and then the last four digit.</p>
+<p>Here, we&rsquo;re simply <strong>grouping</strong> the three first digit (under default variable \1) and putting them in parenthesis, the three next digits (\2) preceding them by a space and adding a dash after them, and then the last four digit.</p>
 
 <p>This is simply beautiful. And it actually makes a lot of sense!</p>
 
