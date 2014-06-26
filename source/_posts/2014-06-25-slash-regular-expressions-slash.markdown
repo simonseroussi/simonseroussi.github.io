@@ -170,11 +170,13 @@ my_string[2] # => ":"
 my_string[3] #  => " Grouping Like a Boss" 
 ``` 
 
-We can assign them variables, using the ```.captures``` method. 
+We can assign them variables, using the ```.captures``` method.
 
+``` ruby
 my_string = "SimonOnRegex: Grouping Like a Boss"
 one, two, three = my_string.match(/(^[a-z]*)(:)(.*)/i).captures
- 
+```
+
 ``` ruby
 p one   #=> "SimonOnRegex"
 p two   #=> ":"
@@ -201,16 +203,16 @@ Imagine however, if you could combine the power of grouping with substitutions?
 
 **You can!**
 
-You have that ugly string of digits: "1234567890" ... and you want a beautiful, formatted phone number: "(XXX) XXXX-XXX"
+Let's say we have that ugly string of digits: "1234567890" ... and you want a beautiful, formatted phone number: "(XXX) XXXX-XXX".. 
 
-Ring a bell?
+**Ring a bell?**
 
 ``` ruby
 my_phone = 1234567890
 my_phone.to_s.sub /(\d{3})(\d{3})(\d{4})/, '(\1) \2-\3'
 # => "(123) 456-7890"  
 ```
-Here, we're simply grouping the three first digit (under default variable \1) and putting them in parenthesis, the three next digits (\2) preceding them by a space and adding a dash after them, and then the last four digit. 
+Here, we're simply **grouping** the three first digit (under default variable \1) and putting them in parenthesis, the three next digits (\2) preceding them by a space and adding a dash after them, and then the last four digit. 
 
 This is simply beautiful. And it actually makes a lot of sense!
 
