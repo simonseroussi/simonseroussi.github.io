@@ -53,7 +53,7 @@ In a recent lab, [**Regex_rally-ruby-005**](https://github.com/flatiron-school-s
 
 We hold implicitly the instructions to construct our Regular Expression through a list of e-mails listed in our *specs* file.  
 
-```spec
+```
 match = %w{steven@flatironschool.com john.doe@example.com phil@example.co.uk }
 
 do_not_match = ["steven@flatironschool", "user at example.com", "user@example.com@example.com"]
@@ -61,7 +61,7 @@ do_not_match = ["steven@flatironschool", "user at example.com", "user@example.co
 
 Let's make those 'match' requirements a little more complex by taking integers into account: 
 
-```spec
+```
     match = %w{steven@flatironschool.com john.doe@example.com phil@example.co.uk simon123@gmail.com}
 ```
 
